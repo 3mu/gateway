@@ -1,0 +1,12 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+      - id: baidu_domain
+        uri: http://baidu.com
+        predicates:
+        - Profile=prolfieid,func1
+      - id: jd_domain
+        uri: http://jd.com
+        predicates:
+        - Profile=prolfieid,func2
